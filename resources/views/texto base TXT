@@ -1,0 +1,12 @@
+ALTER TABLE `masters` 	ADD `Mas_G1_GolEqui1` INT(2) NULL DEFAULT NULL AFTER `G1`, 
+				 		ADD `Mas_G1_GolEqui2` INT(2) NULL DEFAULT NULL AFTER `Mas_G1_GolEqui1`,
+						ADD `Mas_G2_GolEqui1` INT(2) NULL DEFAULT NULL AFTER `G2`, 
+				 		ADD `Mas_G2_GolEqui2` INT(2) NULL DEFAULT NULL AFTER `Mas_G2_GolEqui1`,
+						ADD `Mas_G3_GolEqui1` INT(2) NULL DEFAULT NULL AFTER `G3`, 
+				 		ADD `Mas_G3_GolEqui2` INT(2) NULL DEFAULT NULL AFTER `Mas_G3_GolEqui1`,	
+				 		ADD `Mas_G4_GolEqui1` INT(2) NULL DEFAULT NULL AFTER `G4`, 
+				 		ADD `Mas_G4_GolEqui2` INT(2) NULL DEFAULT NULL AFTER `Mas_G4_GolEqui1`,
+				 		ADD `Mas_G5_GolEqui1` INT(2) NULL DEFAULT NULL AFTER `G5`, 
+				 		ADD `Mas_G5_GolEqui2` INT(2) NULL DEFAULT NULL AFTER `Mas_G5_GolEqui1`,
+				 		ADD `Mas_G6_GolEqui1` INT(2) NULL DEFAULT NULL AFTER `G6`, 
+				 		ADD `Mas_G6_GolEqui2` INT(2) NULL DEFAULT NULL AFTER `Mas_G6_GolEqui1`;				 					 					 					 					 		

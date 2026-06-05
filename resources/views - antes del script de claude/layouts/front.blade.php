@@ -1,0 +1,52 @@
+@if(!Auth::user())
+	<?php 
+	    Session(['DreamTeam' => 0 ]);
+	 	Session(['Intocables' => 0 ]); 
+	 ?>
+@endif	
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mundial Rusia 2022 ::: Prode de amigos</title>
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Pedicure Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+		
+<!-- for banner css files -->
+{!!Html::style('{{ asset('') }}boostrap.min.css')!!}
+
+<link rel="stylesheet" type="text/css" href="{{ asset('css/Front_') }}zoomslider.css" /><!--zoomslider css -->
+<script type="text/javascript" src="{{ asset('js/') }}Front_modernizr-2.6.2.min.js"></script><!--modernizer css -->
+<!-- //for banner css files -->
+<link rel="stylesheet" href="{{ asset('css/Front_') }}flexslider.css" type="text/css" media="all" />
+<!-- custom-theme css files -->
+<link href="{{ asset('css/Front_') }}bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ asset('css/Front_') }}style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //custom-theme css files-->
+<!-- font-awesome-icons -->
+<link href="{{ asset('css/Front_') }}font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome-icons -->
+<!-- googlefonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+<!-- //googlefonts -->
+</head>
+<body>					
+	<div class="container">
+		<div class="modal-dialog" role="document">
+					<div class="modal-body">
+						<a href="https://www.prodeamigosqatar2022.com.ar">
+							<img src="{{ asset('FrontImages/') }}/logogrande.png" alt=" " class="img-responsive" />
+						</a>
+						@yield('content')
+					</div>
+		</div>			
+	</div>		
+    @section('scripts')
+    @show			
+</body>
+</html>					
