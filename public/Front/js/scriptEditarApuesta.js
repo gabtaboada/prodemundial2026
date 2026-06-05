@@ -1,23 +1,4 @@
-/*
-switch ( window.location.host ){
-    case "localhost:8000":
-        var RutaGlobal = "http://localhost:8000/boleta";
-    break;
-    case "127.0.0.1:8000":
-        var RutaGlobal = "http://127.0.0.1:8000/boleta";
-    break;
-    case "localhost":
-        var RutaGlobal = "http://localhost/mundial2026_claude/mundial2026_laravel11/prode_backup_20260605-viernes/public_html/public/boleta";
-    break;
-    case "www.prodeamigos2026.com.ar":
-        var RutaGlobal = "https://www.prodeamigos2026.com.ar/boleta";
-    break;
-    case "prodeamigos2026.com.ar":
-        var RutaGlobal = "https://www.prodeamigos2026.com.ar/boleta";
-    break;	
-
-}*/
-var RutaGlobal = window.location.protocol + "//" + window.location.host + "/boleta";
+var RutaGlobal = "https://www.prodeamigos2026.com.ar/boleta";
 //www.gtecno.com.ar/boleta/ObtengoDatosApuesta/A/A1 
 console.log("probando gtecho");
 
