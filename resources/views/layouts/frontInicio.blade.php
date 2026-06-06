@@ -57,7 +57,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<h1><a href="https://www.prodeamigos2026.com.ar">
 									<div style="max-width:257px;" id="logoinicio">
 									<img src="{{ asset('FrontImages/logo1-v3.png') }}" width="257px" height="55px">
-									{{-- <img src="{{ asset('FrontImages/logo1.png') }}" alt="" title=""  width="257px" height="55px"> --}}
 									</div>
 								</a>
 							</h1>
@@ -66,44 +65,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<div class="w3-header-top-right-text">
 								
 						</div>
-
-						{{-- <div class="email-right">
-							{{-- @if(Auth::user())
-								<font style="color:#fff;">
-									{!!Auth::user()->par_name!!} {!!Auth::user()->par_apellido!!} 
-								</font>
-							@endif	
-							{{-- solo muestra nombre si es participante del front 
-						</div>--}}
-					<div class="email-right" style="display:flex; align-items:center; gap:15px; justify-content:flex-end;">
-    @if(Auth::guard('participantes')->check())
-        <span style="color:#fff; font-weight:bold; font-size:15px;">
-            {{ Auth::guard('participantes')->user()->par_name }}
-            {{ Auth::guard('participantes')->user()->par_apellido }}
-        </span>
-        <a href="{!!URL::to('/logoutUsuario')!!}" class="btn-salir">Salir</a>
-    @else
-        <a href="{!!URL::to('IngresarUsuario')!!}" class="btn-inicio-sesion">
-            Iniciar sesión
-        </a>
-    @endif
-</div>
-<div class="agileinfo-social-grids" style="display:none;"></div>
-{{-- 
-						<div class="agileinfo-social-grids">
-							@if(!Auth::guard('participantes')->check())
+						<div class="email-right" style="display:flex; align-items:center; gap:15px; justify-content:flex-end;">
+							@if(Auth::guard('participantes')->check())
+								<span style="color:#fff; font-weight:bold; font-size:15px;">
+									{{ Auth::guard('participantes')->user()->par_name }}
+									{{ Auth::guard('participantes')->user()->par_apellido }}
+								</span>
+								<a href="{!!URL::to('/logoutUsuario')!!}" class="btn-salir">Salir</a>
+							@else
 								<a href="{!!URL::to('IngresarUsuario')!!}" class="btn-inicio-sesion">
 									Iniciar sesión
 								</a>
-							@else
-								<font style="color:#fff;">
-									{!! Auth::guard('participantes')->user()->par_name !!}
-									{!! Auth::guard('participantes')->user()->par_apellido !!}
-								</font>
-								<a href="{!!URL::to('/logoutUsuario')!!}" class="btn-salir">Salir</a>
 							@endif
-						</div> --}}
-
+						</div>
+<div class="agileinfo-social-grids" style="display:none;"></div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>

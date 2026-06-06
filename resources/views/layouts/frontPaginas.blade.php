@@ -56,15 +56,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="w3-agile-logo">
 			<div class="container">
 				<div class="head-wl">
-    <div class="headder-w3">
-        <h1><a href="https://www.prodeamigos2026.com.ar">
-            <div style="max-width:257px;" id="logoinicio">
-                <img src="{{ asset('FrontImages/logo1-v3.png') }}" alt="" title="" width="257px" height="55px">
-            </div>
-        </a></h1>
-    </div>
-</div>
-<div style="text-align:center; padding: 5px 15px;">
+					<div class="headder-w3">
+								<h1><a href="https://www.prodeamigos2026.com.ar">
+											<div style="max-width:257px;" id="logoinicio">
+												<img src="{{ asset('FrontImages/logo1-v3.png') }}" alt="" title="" width="257px" height="55px">
+											</div>
+								</a></h1>
+					</div>
+					<div class="w3-header-top-right-text">
+								
+						</div>
+					<div class="email-right" style="text-align:center; padding: 0px 0px;">
     @if(Auth::guard('participantes')->check())
         <span style="color:#fff; font-weight:bold; font-size:15px; margin-right:10px;">
             {{ Auth::guard('participantes')->user()->par_name }}
@@ -75,6 +77,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <a href="{!!URL::to('IngresarUsuario')!!}" class="btn-inicio-sesion">Iniciar sesión</a>
     @endif
 </div>
+				</div>
+
 			</div>
 				
 		</div>
