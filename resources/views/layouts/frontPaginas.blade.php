@@ -52,61 +52,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="baner">
 	
 	<!--/banner-info-->
-	  <div class="header">
+	<div class="header">
 		<div class="w3-agile-logo">
 			<div class="container">
-				<div class=" head-wl">
-					<div class="headder-w3">
-						<h1><a href="https://www.prodeamigos2026.com.ar">
-								<div style="max-width:257px;" id="logoinicio">
-								 <img src="{{ asset('FrontImages/logo1-v3.png') }}" alt="" title=""  width="257px" height="55px">
-								</div>
-							</a>
-						</h1>
-					</div>
-
-					<div class="w3-header-top-right-text">
-			
-					</div>
-
-
-					{{-- <div class="email-right">
-							@if(Auth::guard('participantes')->check())
-								<font style="color:#fff;">
-									{!! Auth::guard('participantes')->user()->par_name !!} 
-									{!! Auth::guard('participantes')->user()->par_apellido !!} 
-								</font>
-							@endif
-					</div> --}}
-					<div class="email-right" style="display:flex; align-items:center; gap:15px; justify-content:flex-end;">
+				<div class="head-wl">
+    <div class="headder-w3">
+        <h1><a href="https://www.prodeamigos2026.com.ar">
+            <div style="max-width:257px;" id="logoinicio">
+                <img src="{{ asset('FrontImages/logo1-v3.png') }}" alt="" title="" width="257px" height="55px">
+            </div>
+        </a></h1>
+    </div>
+</div>
+<div style="text-align:center; padding: 5px 15px;">
     @if(Auth::guard('participantes')->check())
-        <span style="color:#fff; font-weight:bold; font-size:15px;">
+        <span style="color:#fff; font-weight:bold; font-size:15px; margin-right:10px;">
             {{ Auth::guard('participantes')->user()->par_name }}
             {{ Auth::guard('participantes')->user()->par_apellido }}
         </span>
         <a href="{!!URL::to('/logoutUsuario')!!}" class="btn-salir">Salir</a>
     @else
-        <a href="{!!URL::to('IngresarUsuario')!!}" class="btn-inicio-sesion">
-            Iniciar sesión
-        </a>
+        <a href="{!!URL::to('IngresarUsuario')!!}" class="btn-inicio-sesion">Iniciar sesión</a>
     @endif
 </div>
-<div class="agileinfo-social-grids" style="display:none;"></div>
-
-	{{-- <div class="agileinfo-social-grids">
-	@if(!Auth::guard('participantes')->check())
-		
-		<a href="{!!URL::to('IngresarUsuario')!!}" class="btn-inicio-sesion">
-			Iniciar sesión
-		</a>
-
-	@else
-		<a href="{!!URL::to('/logoutUsuario')!!}" style="text-decoration:none;color:#fff;margin-left:10px;">Salir</a>
-	@endif
-					</div> --}}
-
-					<div class="clearfix"> </div>
-				</div>
 			</div>
 				
 		</div>

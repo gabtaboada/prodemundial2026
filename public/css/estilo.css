@@ -1,3 +1,39 @@
 .titulosTablas {
  	font-size: 22px;
 }
+
+/* Header mobile fix */
+@media (max-width: 768px) {
+    .baner {
+        min-height: auto !important;
+    }
+    .head-wl {
+        flex-wrap: wrap;
+        justify-content: center !important;
+        padding: 10px 0;
+    }
+    .headder-w3 {
+        flex: 0 0 100% !important;
+        text-align: center;
+    }
+    .w3-header-top-right-text {
+        display: none !important;
+    }
+    .email-right {
+        flex: 0 0 100% !important;
+        justify-content: center !important;
+		margin-top: 80px;
+    }	
+	
+    .agileinfo-social-grids {
+        flex: 0 0 100% !important;
+        text-align: center;
+    }
+    .head-wl {
+        flex-wrap: wrap !important;
+    }
+	.w3-banner-head-info{
+		            background: rgba(2, 2, 2, 0.51);
+	}
+
+}

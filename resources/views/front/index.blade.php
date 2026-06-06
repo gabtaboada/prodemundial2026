@@ -3,13 +3,13 @@
 @section('content')
     <!-- About us -->
     <div class="about-3">
-        <h3 class="heading-agileinfo">Bienvenidos<span>Al prode de amigos del mundial 2022</span></h3>
+        <h3 class="heading-agileinfo">Bienvenidos<span>Al prode de amigos del mundial 2026</span></h3>
         <div class="container">
             <div class="d-flex">
 
                 <div class="about1">
 
-                    <p>Bienvenidos a la página del prode del mundial 2022. Una idea que venimos haciendo, con Gabi hace
+                    <p>Bienvenidos a la página del prode del mundial 2026. Una idea que venimos haciendo, con Gabi hace
                         varios mundiales y tratamos de mejorarla mundial a mundial. La idea es hacer un poco mas divertido
                         algo que ya de por si nos apasiona.
 
