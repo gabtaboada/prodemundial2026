@@ -111,7 +111,7 @@
 							&nbsp;<strong>{{ $partido -> GolesEquipo1 }}
 						</td>
 						<td>
-							{{ $partido -> B_abreviado1 }}
+							{{ $partido -> L_abreviado1 }}
 						</td>
 						<td>
 							<img src="{{ $partido -> L_Bandera1 }}" alt="" title="" style="border-radius: 50%;border: 1px solid #ddd;" width="20" height="20" >
