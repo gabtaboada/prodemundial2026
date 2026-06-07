@@ -7,7 +7,7 @@
 @endif
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 <title>Mundial Usa - Canada - Mexico 2026 ::: Prode de amigos</title>
 <!-- custom-theme -->

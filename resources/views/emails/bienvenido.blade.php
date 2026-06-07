@@ -14,7 +14,7 @@
 		Su contraseña es <strong>{{ $password}}</strong> 
 	</p>
 	<p> 
-		Gracias por participar una vez más en el prode de amigos… para poder cargar la boleta debes pagar la apuesta, este año pusimos un valor de 5000$ (equivalentes a los 500$ del último mundial ) …  una vez realizado se habilitara el botón para cargar  la boleta que la podrás modificar si lo quisieras hasta el día anterior al comienzo del mundial. Ese día te llegara un mail con la tabla de premios de acuerdo a la cantidad de participantes (50%  de lo recaudado al primero, 20% al segundo, 10% al tercero, 5% al cuarto y del quinto al 10mo recuperaran lo apostado).
+		Gracias por participar una vez más en el prode de amigos… para poder cargar la boleta debes pagar la apuesta, este año pusimos un valor de 25000$ (equivalentes a los 5000$ del último mundial ) …  una vez realizado se habilitara el botón para cargar  la boleta que la podrás modificar si lo quisieras hasta el día anterior al comienzo del mundial. Ese día te llegara un mail con la tabla de premios de acuerdo a la cantidad de participantes (50%  de lo recaudado al primero, 20% al segundo, 10% al tercero, 5% al cuarto y del quinto al 10mo recuperaran lo apostado).
 
 		Este mundial agregamos los resultados con goles, el cual sumara un punto extra en caso de acertarlo exactamente.
 		

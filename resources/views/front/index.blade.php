@@ -13,8 +13,7 @@
                         varios mundiales y tratamos de mejorarla mundial a mundial. La idea es hacer un poco mas divertido
                         algo que ya de por si nos apasiona.
 
-                        Esperemos que les guste, que nos podamos divertir y por sobre todo salir CAMPEONES en tierras
-                        arabes.
+                        Esperemos que les guste, que nos podamos divertir y por sobre todo salir CAMPEONES en tierras norteamericanas.
 
                         Saludos, Gracias por participar y buena suerte</p>
 
