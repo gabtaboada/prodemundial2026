@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Http\Requests\StoreUsuarioRequest;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 //use App\Models\Http\Requests\UsuariosCreateRequest;
@@ -53,7 +53,7 @@ class UsuariosFrontController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(StoreUsuarioRequest $request)
     //public function store(Request $request)
     {
        // dd($request->all());

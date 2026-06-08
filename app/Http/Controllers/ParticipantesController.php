@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Http\Requests\StoreParticipanteRequest;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 //use App\Models\Http\Requests\ParticiCreateRequest;
@@ -195,7 +195,7 @@ if($VecGrupoAmigos) {
      * @return \Illuminate\Http\Response
      */
     //public function store(ParticiCreateRequest $request)
-    public function store(Request $request)
+    public function store(StoreParticipanteRequest $request)
     {
         //dd($request->input('CheckGrupoAmigo'));
 if(!empty($request->input('CheckGrupoAmigo')))

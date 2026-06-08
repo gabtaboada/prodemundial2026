@@ -12,6 +12,10 @@
 			@include('front.boleta.forms.GrupoF')
 			@include('front.boleta.forms.GrupoG')
 			@include('front.boleta.forms.GrupoH')						
+			@include('front.boleta.forms.GrupoI')	
+			@include('front.boleta.forms.GrupoJ')	
+			@include('front.boleta.forms.GrupoK')	
+			@include('front.boleta.forms.GrupoL')	
 			
 				
 				

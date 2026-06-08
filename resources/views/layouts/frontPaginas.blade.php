@@ -14,7 +14,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>Mundial Qatar 2026 ::: Prode de amigos</title>
+<title>Mundial Usa - Canada - Mexico 2026 ::: Prode de amigos</title>
 <!-- custom-theme -->
 
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
