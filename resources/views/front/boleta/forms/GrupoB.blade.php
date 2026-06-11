@@ -36,7 +36,7 @@
 														{{ $g }}
 													</option>
                                          @endfor
-                                     </select>B                                 </td>
+                                     </select>                                 </td>
                                  <td style="max-width: 30px;">
                                      {{ $partido->B_abreviado1 }}
                                  </td>

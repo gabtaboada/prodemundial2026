@@ -118,6 +118,7 @@
          <!-- /.panel-body -->
         </div>
 	</div>		
+	
 	{!! $participantes->appends(request()->only(['ParticipanteBusqueda','pago']))->render() !!}
 @endsection
 

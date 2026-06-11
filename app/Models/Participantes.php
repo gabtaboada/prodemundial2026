@@ -49,6 +49,7 @@ class Participantes extends Model implements AuthenticatableContract, Authorizab
             ->select('participantes.*','aciertos.CantidadAciertos')
             ->orderBy('par_apellido','ASC')
             ->paginate(25);
+            //->get();
     }
 
     public function scopeParticipante($query, $ParticipanteBusqueda, $pago)

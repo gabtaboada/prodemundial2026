@@ -300,54 +300,50 @@ class BoletaController extends Controller
                 $GrupoH[$key]['GolesEquipo2'] = $ApuGrupoH->$AuxGrupoHEquipo2;
                 $i++;                      
               }  
-//GRUPO I
-              foreach ($GrupoI as $key => $value) {
-                $Partido = $GrupoI[$key]->I_Partido;
-                $GrupoI[$key]['Apuesta'] = $ApuGrupoI->$Partido;
-                //echo " key ".$key. " value ".$GrupoA[$key]->A_Partido."<br>";
-
-                $AuxGrupoIEquipo1 = "Par_I".$i."_GolEqui1";
-                $AuxGrupoIEquipo2 = "Par_I".$i."_GolEqui2";
-                $GrupoI[$key]['GolesEquipo1'] = $ApuGrupoI->$AuxGrupoIEquipo1;
-                $GrupoI[$key]['GolesEquipo2'] = $ApuGrupoI->$AuxGrupoIEquipo2;
-                $i++;                      
-              }      
-//GRUPO J
-              foreach ($GrupoJ as $key => $value) {
-                $Partido = $GrupoJ[$key]->J_Partido;
-                $GrupoJ[$key]['Apuesta'] = $ApuGrupoJ->$Partido;
-                //echo " key ".$key. " value ".$GrupoA[$key]->A_Partido."<br>";
-
-                $AuxGrupoJEquipo1 = "Par_J".$i."_GolEqui1";
-                $AuxGrupoJEquipo2 = "Par_J".$i."_GolEqui2";
-                $GrupoJ[$key]['GolesEquipo1'] = $ApuGrupoJ->$AuxGrupoJEquipo1;
-                $GrupoJ[$key]['GolesEquipo2'] = $ApuGrupoJ->$AuxGrupoJEquipo2;
-                $i++;                      
-              }      
+// GRUPO I
+$i=1;  // ← agregar
+foreach ($GrupoI as $key => $value) {
+    $Partido = $GrupoI[$key]->I_Partido;
+    $GrupoI[$key]['Apuesta'] = $ApuGrupoI->$Partido;
+    $AuxGrupoIEquipo1 = "Par_I".$i."_GolEqui1";
+    $AuxGrupoIEquipo2 = "Par_I".$i."_GolEqui2";
+    $GrupoI[$key]['GolesEquipo1'] = $ApuGrupoI->$AuxGrupoIEquipo1;
+    $GrupoI[$key]['GolesEquipo2'] = $ApuGrupoI->$AuxGrupoIEquipo2;
+    $i++;
+}
+// GRUPO J
+$i=1;  // ← agregar
+foreach ($GrupoJ as $key => $value) {
+    $Partido = $GrupoJ[$key]->J_Partido;
+    $GrupoJ[$key]['Apuesta'] = $ApuGrupoJ->$Partido;
+    $AuxGrupoJEquipo1 = "Par_J".$i."_GolEqui1";
+    $AuxGrupoJEquipo2 = "Par_J".$i."_GolEqui2";
+    $GrupoJ[$key]['GolesEquipo1'] = $ApuGrupoJ->$AuxGrupoJEquipo1;
+    $GrupoJ[$key]['GolesEquipo2'] = $ApuGrupoJ->$AuxGrupoJEquipo2;
+    $i++;
+}
 // GRUPO K
-              foreach ($GrupoK as $key => $value) {
-                $Partido = $GrupoK[$key]->K_Partido;
-                $GrupoK[$key]['Apuesta'] = $ApuGrupoK->$Partido;
-                //echo " key ".$key. " value ".$GrupoA[$key]->A_Partido."<br>";
-
-                $AuxGrupokEquipo1 = "Par_k".$i."_GolEqui1";
-                $AuxGrupokEquipo2 = "Par_k".$i."_GolEqui2";
-                $GrupoK[$key]['GolesEquipo1'] = $ApuGrupoK->$AuxGrupokEquipo1;
-                $GrupoK[$key]['GolesEquipo2'] = $ApuGrupoK->$AuxGrupokEquipo2;
-                $i++;                      
-              }      
-//GRUPO L
-              foreach ($GrupoL as $key => $value) {
-                $Partido = $GrupoL[$key]->l_Partido;
-                $GrupoL[$key]['Apuesta'] = $ApuGrupoL->$Partido;
-                //echo " key ".$key. " value ".$GrupoA[$key]->A_Partido."<br>";
-
-                $AuxGrupolEquipo1 = "Par_l".$i."_GolEqui1";
-                $AuxGrupolEquipo2 = "Par_l".$i."_GolEqui2";
-                $GrupoL[$key]['GolesEquipo1'] = $ApuGrupoL->$AuxGrupolEquipo1;
-                $GrupoL[$key]['GolesEquipo2'] = $ApuGrupoL->$AuxGrupolEquipo2;
-                $i++;                      
-              }                          
+$i=1;  // ← agregar
+foreach ($GrupoK as $key => $value) {
+    $Partido = $GrupoK[$key]->K_Partido;
+    $GrupoK[$key]['Apuesta'] = $ApuGrupoK->$Partido;
+    $AuxGrupoKEquipo1 = "Par_K".$i."_GolEqui1";  // ← K mayúscula
+    $AuxGrupoKEquipo2 = "Par_K".$i."_GolEqui2";  // ← K mayúscula
+    $GrupoK[$key]['GolesEquipo1'] = $ApuGrupoK->$AuxGrupoKEquipo1;
+    $GrupoK[$key]['GolesEquipo2'] = $ApuGrupoK->$AuxGrupoKEquipo2;
+    $i++;
+}
+// GRUPO L
+$i=1;  // ← agregar
+foreach ($GrupoL as $key => $value) {
+    $Partido = $GrupoL[$key]->L_Partido;          // ← L mayúscula
+    $GrupoL[$key]['Apuesta'] = $ApuGrupoL->$Partido;
+    $AuxGrupoLEquipo1 = "Par_L".$i."_GolEqui1";  // ← L mayúscula
+    $AuxGrupoLEquipo2 = "Par_L".$i."_GolEqui2";  // ← L mayúscula
+    $GrupoL[$key]['GolesEquipo1'] = $ApuGrupoL->$AuxGrupoLEquipo1;
+    $GrupoL[$key]['GolesEquipo2'] = $ApuGrupoL->$AuxGrupoLEquipo2;
+    $i++;
+}                    
               
         }
         else
@@ -419,7 +415,7 @@ class BoletaController extends Controller
         $HabilitarCarga = $AuxHabilitar[0]->estado;
        // dd('llegue al final');
        //dd($GrupoJ);
-
+      //  dd($GrupoK);
 $Borrador = BoletaParcial::where('Part_id', $participanteID)->first();
 return view('front.boleta',compact('ExisteBoleta','GrupoA','GrupoB','GrupoC','GrupoD','GrupoE','GrupoF','GrupoG','GrupoH','GrupoI','GrupoJ','GrupoK','GrupoL','participanteID','HabilitarCarga','Pago','Borrador'));
        /*

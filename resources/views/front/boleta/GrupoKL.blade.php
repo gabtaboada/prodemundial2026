@@ -1,7 +1,7 @@
 <div class="pricing-grids-info" style="margin-top:20px;">
 		<div class="pricing-grid grid-one">
 			<div class="w3ls-top">
-				<h3>Grupo G</h3> 
+				<h3>Grupo K</h3> 
 			</div>
 		<div class="w3ls-bottom">
 			<div class="tabla-cel-responsive">
@@ -25,7 +25,7 @@
 					</thead>
 										
 					<tbody>
-						@foreach( $GrupoG as $partido)
+						@foreach( $GrupoK as $partido)
 							<tr style="border: 1px solid #ddd;">
 								<td>
 									@if($partido->Apuesta =="L")
@@ -35,10 +35,10 @@
 									&nbsp;<strong>{{ $partido -> GolesEquipo1 }}</strong>
 								</td>
 								<td>
-									{{ $partido -> G_abreviado1 }}
+									{{ $partido -> K_abreviado1 }}
 								</td>
 								<td>
-									<img src="{{ $partido -> G_Bandera1 }}" alt="" title="" style="border-radius: 50%;border: 1px solid #ddd;" width="20" height="20" >
+									<img src="{{ $partido -> K_Bandera1 }}" alt="" title="" style="border-radius: 50%;border: 1px solid #ddd;" width="20" height="20" >
 										
 								</td>
 								<td>
@@ -48,10 +48,10 @@
 									@endif							
 								</td>
 								<td>
-									{{ $partido -> G_abreviado2 }}
+									{{ $partido -> K_abreviado2 }}
 								</td>
 								<td>
-									<img src="{{ $partido -> G_Bandera2 }}" alt="" title="" style="border-radius: 50%;border: 1px solid #ddd;" width="20" height="20" >
+									<img src="{{ $partido -> K_Bandera2 }}" alt="" title="" style="border-radius: 50%;border: 1px solid #ddd;" width="20" height="20" >
 								</td>
 								<td>
 									<strong>{{ $partido -> GolesEquipo2 }}</strong>&nbsp;			
@@ -61,7 +61,7 @@
 								</td>	
 									<td>
 										@if( $HabilitarCarga == 1)
-											<button value="{{ $partido -> G_Partido }}/G" Onclick='ModificarApuesta(this);'  class='btn btn-link ' data-toggle='modal' data-target='#ModalEditarApuesta' style="padding:0px;"><img src="/FrontImages/edit.png" width="14" height="14" alt="Modificar Master" title="Modificar Master"></button>											
+											<button value="{{ $partido -> K_Partido }}/K" Onclick='ModificarApuesta(this);'  class='btn btn-link ' data-toggle='modal' data-target='#ModalEditarApuesta' style="padding:0px;"><img src="/FrontImages/edit.png" width="14" height="14" alt="Modificar Master" title="Modificar Master"></button>											
 										@endif									
 									</td>																				
 							</tr>
@@ -75,7 +75,7 @@
 	</div><!-- pricing-grid grid-one -->
 	<div class="pricing-grid grid-two">
 		<div class="w3ls-top">
-		<h3>Grupo H</h3> 
+		<h3>Grupo L</h3> 
 		</div>
 		<div class="w3ls-bottom">
 			<div class="tabla-cel-responsive">
@@ -99,7 +99,7 @@
 					</thead>
 										
 					<tbody>
-						@foreach( $GrupoH as $partido)
+						@foreach( $GrupoL as $partido)
 					<tr style="border: 1px solid #ddd;">
 						<td>
 							@if($partido->Apuesta =="L")
@@ -109,10 +109,10 @@
 							&nbsp;<strong>{{ $partido -> GolesEquipo1 }}</strong>
 						</td>
 						<td>
-							{{ $partido -> H_abreviado1 }}
+							{{ $partido -> L_abreviado1 }}
 						</td>
 						<td>
-							<img src="{{ $partido -> H_Bandera1 }}" alt="" title="" style="border-radius: 50%;border: 1px solid #ddd;" width="20" height="20" >
+							<img src="{{ $partido -> L_Bandera1 }}" alt="" title="" style="border-radius: 50%;border: 1px solid #ddd;" width="20" height="20" >
 						</td>
 						<td>
 							@if($partido->Apuesta =="E")
@@ -121,10 +121,10 @@
 							@endif							
 						</td>
 						<td>
-							{{ $partido -> H_abreviado2 }}
+							{{ $partido -> L_abreviado2 }}
 						</td>
 						<td>
-							<img src="{{ $partido -> H_Bandera2 }}" alt="" title="" style="border-radius: 50%;border: 1px solid #ddd;" width="20" height="20" >
+							<img src="{{ $partido -> L_Bandera2 }}" alt="" title="" style="border-radius: 50%;border: 1px solid #ddd;" width="20" height="20" >
 						</td>
 						<td>
 							<strong>{{ $partido -> GolesEquipo2 }}</strong>&nbsp;			
@@ -134,7 +134,7 @@
 						</td>	
 							<td>
 								@if( $HabilitarCarga == 1)
-									<button value="{{ $partido -> H_Partido }}/H" Onclick='ModificarApuesta(this);'  class='btn btn-link ' data-toggle='modal' data-target='#ModalEditarApuesta' style="padding:0px;"><img src="/FrontImages/edit.png" width="14" height="14" alt="Modificar Master" title="Modificar Master"></button>											
+									<button value="{{ $partido -> L_Partido }}/L" Onclick='ModificarApuesta(this);'  class='btn btn-link ' data-toggle='modal' data-target='#ModalEditarApuesta' style="padding:0px;"><img src="/FrontImages/edit.png" width="14" height="14" alt="Modificar Master" title="Modificar Master"></button>											
 								@endif									
 							</td>																				
 					</tr>
