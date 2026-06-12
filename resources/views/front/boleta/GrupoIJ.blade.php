@@ -62,7 +62,7 @@
 								</td>	
 									<td>
 										@if( $HabilitarCarga == 1)
-											<button value="{{ $partido -> I_Partido }}/G" Onclick='ModificarApuesta(this);'  class='btn btn-link ' data-toggle='modal' data-target='#ModalEditarApuesta' style="padding:0px;"><img src="/FrontImages/edit.png" width="14" height="14" alt="Modificar Master" title="Modificar Master"></button>											
+											<button value="{{ $partido -> I_Partido }}/I" Onclick='ModificarApuesta(this);'  class='btn btn-link ' data-toggle='modal' data-target='#ModalEditarApuesta' style="padding:0px;"><img src="/FrontImages/edit.png" width="14" height="14" alt="Modificar Master" title="Modificar Master"></button>											
 										@endif									
 									</td>																				
 							</tr>
@@ -135,7 +135,7 @@
 						</td>	
 							<td>
 								@if( $HabilitarCarga == 1)
-									<button value="{{ $partido -> J_Partido }}/H" Onclick='ModificarApuesta(this);'  class='btn btn-link ' data-toggle='modal' data-target='#ModalEditarApuesta' style="padding:0px;"><img src="/FrontImages/edit.png" width="14" height="14" alt="Modificar Master" title="Modificar Master"></button>											
+									<button value="{{ $partido -> J_Partido }}/J" Onclick='ModificarApuesta(this);'  class='btn btn-link ' data-toggle='modal' data-target='#ModalEditarApuesta' style="padding:0px;"><img src="/FrontImages/edit.png" width="14" height="14" alt="Modificar Master" title="Modificar Master"></button>											
 								@endif									
 							</td>																				
 					</tr>

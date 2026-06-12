@@ -19,6 +19,7 @@ break;
 
 }
 */
+
 var RutaGlobal = window.location.protocol + "//" + window.location.host + "/admin/participantes/VerBoleta";
 console.log("path name "+window.location.pathname);
 console.log("Probando urls "+RutaGlobal);

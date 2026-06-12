@@ -225,7 +225,8 @@ public function __construct (){
                   ->where('aciertos.deleted_at',null)
                   ->where('aciertos.CantidadAciertos','>=',0)
                   ->orderBy('aciertos.ac_Posicion','ASC')
-                  ->paginate(25);
+                  //->paginate(25);
+                  ->get();
 
         //  return " Equipo1 ".$Equipo1." Equipo 2 ".$Equipo2;
           //dd($Posiciones);

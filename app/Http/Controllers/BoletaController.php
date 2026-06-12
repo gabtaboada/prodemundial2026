@@ -766,6 +766,7 @@ return view('front.boleta',compact('ExisteBoleta','GrupoA','GrupoB','GrupoC','Gr
      */
   public function ObtengoDatosApuesta($grupo,$partido)
     {
+  
    /*
         $usuario = Session::get('Usuario');
         dd($usuario);
@@ -869,7 +870,50 @@ return view('front.boleta',compact('ExisteBoleta','GrupoA','GrupoB','GrupoC','Gr
                     $GolesEquipo1 = $apuesta[0]->$AuxGolesEquipo1;
                     $GolesEquipo2 = $apuesta[0]->$AuxGolesEquipo2;                    
                 break;    
-
+            case 'I':
+                    $DatosPartido = GrupoI::select('*')
+                    ->where('I_Partido',$partido)
+                    ->get();
+                    $Equipo1 = $DatosPartido[0]->I_Equipo1;
+                    $Equipo2 = $DatosPartido[0]->I_Equipo2;
+                    $Bandera1 = $DatosPartido[0]->I_Bandera1;
+                    $Bandera2 = $DatosPartido[0]->I_Bandera2;
+                    $GolesEquipo1 = $apuesta[0]->$AuxGolesEquipo1;
+                    $GolesEquipo2 = $apuesta[0]->$AuxGolesEquipo2;                    
+                break; 
+            case 'J':
+                    $DatosPartido = GrupoJ::select('*')
+                    ->where('J_Partido',$partido)
+                    ->get();
+                    $Equipo1 = $DatosPartido[0]->J_Equipo1;
+                    $Equipo2 = $DatosPartido[0]->J_Equipo2;
+                    $Bandera1 = $DatosPartido[0]->J_Bandera1;
+                    $Bandera2 = $DatosPartido[0]->J_Bandera2;
+                    $GolesEquipo1 = $apuesta[0]->$AuxGolesEquipo1;
+                    $GolesEquipo2 = $apuesta[0]->$AuxGolesEquipo2;                    
+                break;   
+            case 'K':
+                    $DatosPartido = GrupoK::select('*')
+                    ->where('K_Partido',$partido)
+                    ->get();
+                    $Equipo1 = $DatosPartido[0]->K_Equipo1;
+                    $Equipo2 = $DatosPartido[0]->K_Equipo2;
+                    $Bandera1 = $DatosPartido[0]->K_Bandera1;
+                    $Bandera2 = $DatosPartido[0]->K_Bandera2;
+                    $GolesEquipo1 = $apuesta[0]->$AuxGolesEquipo1;
+                    $GolesEquipo2 = $apuesta[0]->$AuxGolesEquipo2;                    
+                break;       
+            case 'L':
+                    $DatosPartido = GrupoL::select('*')
+                    ->where('L_Partido',$partido)
+                    ->get();
+                    $Equipo1 = $DatosPartido[0]->L_Equipo1;
+                    $Equipo2 = $DatosPartido[0]->L_Equipo2;
+                    $Bandera1 = $DatosPartido[0]->L_Bandera1;
+                    $Bandera2 = $DatosPartido[0]->L_Bandera2;
+                    $GolesEquipo1 = $apuesta[0]->$AuxGolesEquipo1;
+                    $GolesEquipo2 = $apuesta[0]->$AuxGolesEquipo2;                    
+                break;                                                                   
 
         }
         

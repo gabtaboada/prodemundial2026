@@ -58,10 +58,15 @@
 												<td></td>
 
 												<td style="font-size:13px;">
-													
-													<a href="{!!URL::to('Verboleta/'.$participante -> id)!!}" style="text-decoration:none;font-size:16px;">
+													@if($estado !=1)
+															 <a href="{!!URL::to('Verboleta/'.$participante -> id)!!}" style="text-decoration:none;font-size:16px;">
 													ver boleta
 													</a>
+													@else
+													
+													@endif
+													
+													
 													<!--
 													La boleta se podra ver una vez que inicie el mundial
 												-->

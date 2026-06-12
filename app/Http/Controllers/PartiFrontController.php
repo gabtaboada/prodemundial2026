@@ -24,6 +24,7 @@ use App\Models\GrupoE;
 use App\Models\GrupoF;
 use App\Models\GrupoG;
 use App\Models\GrupoH;
+use App\Models\Flags;
 
 class PartiFrontController extends Controller
 {
@@ -69,8 +70,12 @@ class PartiFrontController extends Controller
                 $participantes[$key]['ExisteBoleta'] = "NO";
             }
         }
-        //dd($participantes);
-        return view('front.participantes',compact('participantes'));
+        $flag = Flags::select('estado')
+        ->where('bandera','HabilitarCarga')
+        ->first();
+        //dd($flag->estado);
+        $estado=$flag->estado;
+        return view('front.participantes',compact('participantes','estado'));
     }
 
     /**
